@@ -1,0 +1,45 @@
+/Users/jseam/Github/starknet-contract/node_modules/@nethermindeth/warp/build/solCompile.js:153
+        throw new solc_typed_ast_1.CompileFailedError([
+        ^
+
+CompileFailedError: Compiler Errors: ==== 0.8.14 ====:
+ ParserError: Source file requires different compiler version (current compiler is 0.8.14+commit.de5c19a6.mod.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version
+ --> Verifier.sol:6:1:
+  |
+6 | pragma solidity ^0.8.17;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+    at printErrors (/Users/jseam/Github/starknet-contract/node_modules/@nethermindeth/warp/build/solCompile.js:153:15)
+    at compileSolFiles (/Users/jseam/Github/starknet-contract/node_modules/@nethermindeth/warp/build/solCompile.js:60:5)
+    at Command.runTranspile (/Users/jseam/Github/starknet-contract/node_modules/@nethermindeth/warp/build/cli.js:81:50)
+    at Command.listener [as _actionHandler] (/Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:482:17)
+    at /Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:1283:65
+    at Command._chainOrCall (/Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:1177:12)
+    at Command._parseCommand (/Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:1283:27)
+    at /Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:1081:27
+    at Command._chainOrCall (/Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:1177:12)
+    at Command._dispatchSubcommand (/Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:1077:23)
+    at Command._parseCommand (/Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:1248:19)
+    at Command.parse (/Users/jseam/Github/starknet-contract/node_modules/commander/lib/command.js:909:10)
+    at Object.<anonymous> (/Users/jseam/Github/starknet-contract/node_modules/@nethermindeth/warp/build/index.js:4:15)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32) {
+  failures: [
+    {
+      errors: [
+        'ParserError: Source file requires different compiler version (current compiler is 0.8.14+commit.de5c19a6.mod.Darwin.appleclang) - note that nightly builds are considered to be strictly less than the released version\n' +
+          ' --> Verifier.sol:6:1:\n' +
+          '  |\n' +
+          '6 | pragma solidity ^0.8.17;\n' +
+          '  | ^^^^^^^^^^^^^^^^^^^^^^^^\n' +
+          '\n'
+      ],
+      compilerVersion: '0.8.14'
+    }
+  ]
+}
+
+Node.js v20.4.0
